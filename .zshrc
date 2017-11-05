@@ -54,6 +54,9 @@ export PATH="/Users/hamham/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/
 
 source $ZSH/oh-my-zsh.sh
 
+# load bash profile, this can load node/nvm etc
+source /Users/hamham/.bash_profile
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -79,8 +82,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# z
-. `brew --prefix`/etc/profile.d/z.sh
+# z brew install z first
+. /usr/local/etc/profile.d/z.sh
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -89,8 +92,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 bindkey "^[[A" history-substring-search-up
 bindkey "^[[B" history-substring-search-down
 
-export NVM_DIR="/Users/hamham/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
