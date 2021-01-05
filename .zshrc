@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/hamham/.oh-my-zsh
+export ZSH=/Users/andrew/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -45,7 +45,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git, history-substring-search)
+plugins=(git history-substring-search)
 
 # User configuration
 
@@ -55,7 +55,6 @@ plugins=(git, history-substring-search)
 source $ZSH/oh-my-zsh.sh
 # TODO
 # source /Users/hamham/.bash_profile
-
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -83,26 +82,20 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # z
-. /usr/local/etc/profile.d/z.sh
+# . /usr/local/etc/profile.d/z.sh
 
 ### Added by the Heroku Toolbelt
 # export PATH="/usr/local/heroku/bin:$PATH"
 
 # rvm
-# export PATH="$PATH:$HOME/.rvm/bin" 
+# export PATH="$PATH:$HOME/.rvm/bin"
 
 # for golang
 # export PATH=$PATH:/usr/local/go/bin
 
+# enable brew for M1
+export PATH="/opt/homebrew/bin:$PATH"
+
 # http://unix.stackexchange.com/questions/97843/how-can-i-search-history-with-what-is-already-entered-at-the-prompt-in-zsh/248789#248789
 bindkey "^[[A" history-substring-search-up
 bindkey "^[[B" history-substring-search-down
-
-
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /Users/hamham/.nvm/versions/node/v7.6.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/hamham/.nvm/versions/node/v7.6.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/hamham/.nvm/versions/node/v7.6.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/hamham/.nvm/versions/node/v7.6.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
-
