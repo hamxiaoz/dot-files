@@ -49,13 +49,13 @@ plugins=(git, history-substring-search)
 
 # User configuration
 
-export PATH="/Users/hamham/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+# export PATH="/Users/hamham/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+# TODO
+# source /Users/hamham/.bash_profile
 
-# load bash profile, this can load node/nvm etc
-source /Users/hamham/.bash_profile
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -82,18 +82,22 @@ source /Users/hamham/.bash_profile
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# z brew install z first
+# z
 . /usr/local/etc/profile.d/z.sh
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+# export PATH="/usr/local/heroku/bin:$PATH"
+
+# rvm
+# export PATH="$PATH:$HOME/.rvm/bin" 
+
+# for golang
+# export PATH=$PATH:/usr/local/go/bin
 
 # http://unix.stackexchange.com/questions/97843/how-can-i-search-history-with-what-is-already-entered-at-the-prompt-in-zsh/248789#248789
 bindkey "^[[A" history-substring-search-up
 bindkey "^[[B" history-substring-search-down
 
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
@@ -101,3 +105,4 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /Users/hamham/.nvm/versions/node/v7.6.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/hamham/.nvm/versions/node/v7.6.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+
